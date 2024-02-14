@@ -15,3 +15,16 @@ rutaFichero <- "data/Baltimore_City_Employee_Salaries_FY_2022.csv"
 DATOSR <- read.csv(rutaFichero)
 ```
 
+
+```{r}
+
+rutafich <- "data/Baltimore_City_Employee_Salaries.csv"  
+datosR <- read_csv(rutafich,col_types = cols(hireDate = col_date(format = "%Y-%m-%d")))
+```
+
+#Importar datos con la libreria rio
+```{r}
+library(rio)
+datosrio <- import("data/Baltimore_City_Employee_Salaries.csv")
+```
+
